@@ -1,0 +1,180 @@
+@font-face {
+    font-family: UOK;
+    src: local('Tajawal'), local('Tajawal-Regular'), url('font//Tajawal.woff2') format('woff2');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+
+body{
+    position: absolute;
+    background-color: rgb(5, 12, 12);
+    padding: 0px;
+    margin:0px;   
+    color:wheat;
+    width:99.8%;
+    overflow: hidden;
+    font-family: UOK;
+}
+.organization-header{
+    height: 100px;
+    left:0px;
+    right:0px;
+    direction: rtl;
+ }
+ .organization-header img{
+    height: 70px;
+    width:70px;
+    margin:12px;
+  }
+ .organization-header h1{
+    display:inline;
+    left:0px;
+    right:0px;
+ }
+section{
+    margin-top:0px;
+    padding: 3rem;
+    display: flex;
+    overflow-x: scroll;
+    left:0px;
+    right:0px;
+    margin-bottom: 10px;
+}
+
+article {
+    position: relative;
+    display:flex;
+    flex-direction:column;
+    padding:1.5rem;
+    height:400px;
+    width: 400px;
+    min-width: 300px;
+    border-radius: 16px;
+    background-color: rgb(5, 12, 12);
+    box-shadow: -1rem 0px 5px black;
+    transition:all ease-out 250ms;
+}
+
+
+.card:hover{
+    transform: translateY(-3rem);
+}
+
+.card:hover~.card{
+    transform: translateX(250px);
+}
+
+.card:not(:first-child){
+    margin-left:-250px;
+}
+
+.card-college-header{
+    position: relative;
+    display:grid;
+    grid-template-rows: 75px 1fr;
+    align-items: center;
+    margin:0;
+    padding: 0px;
+}
+
+.college-avatar img{
+    display:block;
+    width:80px;
+    height:80px;
+    filter:invert(100%);
+    margin:0px;
+    margin-top: -20px;
+
+}
+
+.card:first-child img{
+    display:block;
+    width:100px;
+    height:100px;
+    filter:none;
+    margin:0px;
+}
+
+.card:first-child:hover img{
+    filter:none;
+}
+
+.card:hover img{
+    filter:drop-shadow(Yellow 1px 1px 0px);
+}
+
+.half-circle{
+    position: absolute;
+    top:15px;
+    left:-15px;
+    width:100px;
+    height:100px;
+    fill:none;
+    stroke: orangered;
+    stroke-width: 8;
+    stroke-linecap: round;
+    pointer-events: none;
+    transform: rotate(45deg);
+}
+
+.college-name{
+    margin-left: 60px;
+    direction: rtl;
+    font-weight: 900;
+}
+
+.college-name-prefix{
+    font-style: normal;
+    font-weight: 700;
+    color:#7a7a8c;
+}
+
+.card:hover h3{
+background-image: linear-gradient(90deg,yellow,#e52e71);
+text-shadow: none;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+table{
+    width:99%;
+    margin-top:20px;
+    direction: rtl;
+    text-align:right;
+    font-size: small;
+
+}
+
+tbody{
+width:95%;
+}
+
+section::-webkit-scrollbar{
+    width:20px;
+    height:20px;
+    /* background-color: black; */
+    border-radius: 20px;
+}
+
+section::-webkit-scrollbar-thumb{
+ background-color: rgb(5, 12, 12);
+ border-radius: 20px;
+ box-shadow: inset 2px 2px 2px rgba(55, 55, 55), inset -2px -2px 2px rgb(0, 0, 0);
+}
+section::-webkit-scrollbar-track{
+  /* background-color: #ffffff;  */
+  box-shadow: inset 4px 4px 4px rgba(50, 50, 50), inset -4px -4px 4px rgb(0, 0, 0);
+}
+/* section::-webkit-scrollbar-button{
+     background-color:black;
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.4), inset -2px -2px 2px rgb(0, 0, 0, 0.4); 
+    
+}
+section::-webkit-scrollbar-corner{
+    
+} */
+section::-webkit-scrollbar-track-piece{
+    background-color: rgb(5, 12, 12);
+    box-shadow: inset 5px 5px 3px rgba(0, 0, 0), inset -5px -5px 3px rgb(0, 0, 0);
+    height:2px;
+}
